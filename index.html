@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 600px;
+            background-color: rgb(130, 255, 130);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px black;
+            color: rgb(243, 11, 11);
+        }
+        .todo{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            height: 30px;
+            
+        }
+        .todovalue{
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            font-family: arial;
+            font-size: 1em;
+            font-weight: bold;
+            
+        }
+        .todo:has(.todocheckbox:checked){
+            color: grey;
+            background-color: yellowgreen;
+            text-decoration: line-through;
+            order: 1;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1><u>Todo List</u></h1>
+    <div class="todo">
+        <input type="text" class="todovalue" placeholder="enter here" value="Hit The Gym">
+        <input type="checkbox" class="todocheckbox">
+    </div>
+    <div class="todo">
+        <input type="text" class="todovalue" placeholder="enter here" value="Pay Bills">
+        <input type="checkbox" class="todocheckbox">
+    </div>
+        <div class="todo">
+            <input type="text" class="todovalue" placeholder="enter here" value="Meet Friend">
+            <input type="checkbox" class="todocheckbox">
+        </div>
+        <div class="todo">
+            <input type="text" class="todovalue" placeholder="enter here" value="Buy Eggs">
+            <input type="checkbox" class="todocheckbox">
+        </div>
+        <div class="todo">
+            <input type="text" class="todovalue" placeholder="enter here" value="Read a book">
+            <input type="checkbox" class="todocheckbox">
+        </div>
+        <div class="todo">
+            <input type="text" class="todovalue" placeholder="enter here" value="Attend the client meet">
+            <input type="checkbox" class="todocheckbox">
+        </div>
+        <div class="todo">
+            <input type="text" class="todovalue" placeholder="enter here" value="Do shopping">
+            <input type="checkbox" class="todocheckbox">
+        </div>
+                <div class="todo">
+            <input type="text" class="todovalue" placeholder="enter here" value="Going sleep">
+            <input type="checkbox" class="todocheckbox">
+        </div>
+   </div> 
+</body>
+</html>
